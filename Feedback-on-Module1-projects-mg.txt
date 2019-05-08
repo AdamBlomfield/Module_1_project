@@ -1,0 +1,27 @@
+What Worked:
+
+-identifying variable names for coefficients
+-imputing values/correcting for missing or non-sensical values, etc.
+- .map -> look at options for overlaying lat/long graph
+- scaling variables
+- binning variables - do you want to bin by decade, renovations, etc.
+
+
+Common I Wishes:
+-don't show all exploratory data visualizations/graphs - only those that are extremely meaningful for decision-making
+- check axes of graphs
+- be mindful of color choices in heatmap - red usually means bad, blue usually means okay 
+
+- comparing model performance to baseline;  need to calculate average sq mean of baseline first
+- start building a model by choosing the most highly correlated variable and then adding variables stepwise 
+- finalize by using feed-forward regression model??
+- don't drop rows/outliers/missing data without justification 
+
+- when creating categorical variables, you will need to delete one of the dummy codes so you don't have perfect multicollinearity??  --> one hoc code? (drop one so you can use these as a comparison)....
+
+- can also consider controlling for a variable, even if you don't think it will be a good predictor; if one zip code is affecting your data in particular, you might consider re-coding zip code into 0,1 (in that zip code or not)
+
+Refine model by excluding any predictors with coefficient p-values greater than 0.05
+  -	Use other relevant metrics to assess and improve model performance
+  -	Assess the model’s ability to meet regression assumptions
+  -	Select at least three coefficients from the final model and explain their impact on the price of a house in this dataset
